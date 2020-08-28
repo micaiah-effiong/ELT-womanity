@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ELT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="canvas">
+      <div
+        style="
+          position: relative;
+          display: flex;
+          height: 35%;
+          top: 40%;
+          transform: translate(0, -36%);
+          padding-left: 13px;
+          width: 100%;
+        "
+      >
+        <div
+          style="
+            background-image: url(pic.jpg);
+            background-position: center;
+            width: 36%;
+            height: 100%;
+            border-radius: 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 6px solid white;
+            background-color: white;
+            box-shadow: 0 0 11px black;
+            margin-left: 39px;
+          "
+        ></div>
+        <div
+          style="
+            width: 44%;
+            overflow: hidden;
+            margin-left: 48pt;
+            text-align: center;
+            padding-top: 13px;
+            font-size: 2rem;
+            top: 53pt;
+            position: relative;
+            line-height: 1.6;
+            height: 75%;
+            word-spacing: 7.2px;
+            padding-left: 13px;
+            padding-right: 13px;
+            word-break: break-all;
+          "
+        >
+          <p id="quotePre" style="height: 10rem;">
+            asdsd fklsaNFLKSA FKNSAF SDFKLNSAF DSKFNSD F;K dksdnflsd gksdfng
+            dsfdknfa;dslnfds
+          </p>
+          <div>
+            <span
+              >-<strong
+                ><span id="visNamePre">safmdsklfnsdklfn</span></strong
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-back-drop" style="margin-top: 13rem; position: fixed;">
+      <div class="app-page" style="top: -9rem; position: relative;">
+        <div class="app-img-header p-3">
+          <!-- Imgs -->
+        </div>
+
+        <div>
+          <img
+            src="the thr.png"
+            width="80%"
+            class="img img-fliud mx-auto d-block mt-2"
+          />
+          <div>
+            <!-- class="row" -->
+            <div class="col-xl-6 mx-auto">
+              <div class="card" style="border: none;">
+                <div class="card-body">
+                  <form autocomplete="off">
+                    <h6 class="card-title col-12">Add some extras too..</h6>
+                    <div class="row m-2">
+                      <div
+                        class="ht-tm-element ht-tm-element-inner col-md-6 mt-2 mb-2"
+                      >
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter your name"
+                          id="visName"
+                        />
+                      </div>
+
+                      <div
+                        class="ht-tm-element ht-tm-element-inner col-md-6 col-sm-12 mt-2 mb-2"
+                      >
+                        <div class="custom-file">
+                          <input
+                            type="file"
+                            class="custom-file-input"
+                            id="uploadFile"
+                            style="width: inherit;"
+                          />
+                          <label class="custom-file-label" for="customFile"
+                            >Choose file</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row m-2">
+                      <div class="ht-tm-element ht-tm-element-inner col-12">
+                        <textarea class="form-control" id="quote"></textarea>
+                      </div>
+                    </div>
+                    <div class="row m-2">
+                      <div class="ht-tm-element ht-tm-element-inner col-6">
+                        <input
+                          class="form-control btn btn-primary"
+                          type="button"
+                          value="Generate"
+                          id="downloadBtn"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="bundle.js"></script>
+  </body>
+</html>
