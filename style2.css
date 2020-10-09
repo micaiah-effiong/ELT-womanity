@@ -1,0 +1,160 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.canvas-img {
+  width: 100%;
+}
+
+.pro-pics-frame {
+  position: absolute;
+  display: flex;
+  height: 35%;
+  width: 100%;
+}
+
+.pro-pics {
+  background-position: center;
+  width: 44.5%;
+  height: 44.5%;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2.5px solid #544e4e59;
+  background-color: white;
+  /*box-shadow: 0 0 13px 0px #dd734a;*/
+  position: absolute;
+  right: 5.5%;
+  top: 26.4%;
+}
+
+.quote-frame {
+  width: 55%;
+  overflow: hidden;
+  margin-left: 6.5pt;
+  text-align: justify;
+  padding-top: 13px;
+  font-size: 2.5rem;
+  top: 60pt;
+  position: relative;
+  line-height: 1.6;
+  height: 75%;
+  word-spacing: 2px;
+  padding-left: 13px;
+  padding-right: 13px;
+  word-break: break-all;
+}
+
+.quote-frame {
+  font-family: "Times New Roman";
+}
+
+/**/
+.app-page {
+  width: 50%;
+  background: #fefeff;
+  /* position: absolute; */
+  top: -35%;
+  height: 100vh;
+  margin: auto;
+  /*left: 50%;*/
+  /* transform: translate(-50%, 50%); */
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0px 0px 11px #bbbbbb;
+}
+
+.app-page > div {
+  /*height: 100%;*/
+}
+
+.app-preview {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  /* border: 1px solid black; */
+  margin: 20px auto;
+  background-image: url("the thr.png");
+}
+
+.app-img-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-size: 11px;
+}
+
+.preview-img {
+  width: 300px;
+}
+
+#canvas {
+  width: 900px;
+  height: 900px;
+}
+
+@media (max-width: 880px) {
+  .app-page {
+    width: 100%;
+    background: #fefeff;
+  }
+
+  .app-page > div {
+    height: 80%;
+  }
+
+  .preview-img {
+    width: 80%;
+  }
+
+  .app-img-header {
+    height: 4rem;
+    /*width: 90%;*/
+    margin: auto;
+  }
+
+  .app-preview {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    background-image: url("the thr.jpg");
+  }
+}
+/**/
+@media (max-width: 800px) {
+  .quote-frame {
+    font-size: 1.4em;
+    top: 7pt;
+  }
+}
+
+@media (max-width: 500px) {
+  .quote-frame {
+    font-size: 0.7em;
+  }
+  .pro-pics {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .quote-frame {
+    font-size: 0.6em;
+  }
+  .pro-pics {
+    margin-left: 0px;
+  }
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("the thr.jpg");
+  background-position: top;
+  background-size: cover;
+}
