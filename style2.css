@@ -15,38 +15,48 @@ body::-webkit-scrollbar {
 
 .pro-pics {
   background-position: center;
-  width: 44.5%;
-  height: 44.5%;
+  width: 44.8%;
+  height: 44.8%;
   border-radius: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2.5px solid #544e4e59;
+  border: 2.5px solid #dd734a;
   background-color: white;
-  /*box-shadow: 0 0 13px 0px #dd734a;*/
+  /* box-shadow: 0 0 13px 0px #dd734a; */
   position: absolute;
   right: 5.5%;
-  top: 26.4%;
+  top: 26.1%;
 }
 
 .quote-frame {
-  width: 55%;
-  overflow: hidden;
-  margin-left: 6.5pt;
-  text-align: justify;
-  padding-top: 13px;
-  font-size: 2.5rem;
-  top: 60pt;
-  position: relative;
-  line-height: 1.6;
-  height: 75%;
-  word-spacing: 2px;
+  left: 0%;
+  border-radius: 0;
+  border-color: transparent;
+  width: 46%;
   padding-left: 13px;
   padding-right: 13px;
+  word-spacing: 2px;
   word-break: break-all;
+  font-family: "Times New Roman";
+  height: 38%;
+  top: 36% !important;
 }
 
-.quote-frame {
-  font-family: "Times New Roman";
+.pro-name {
+  color: #5f3744;
+  border-color: transparent;
+  height: 6%;
+  border-radius: 0;
+  top: 74%;
+  width: 50%;
+  line-height: 1.1;
+  right: 5%;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: system-ui;
+  text-align: center;
 }
 
 /**/
@@ -98,6 +108,10 @@ body::-webkit-scrollbar {
     background: #fefeff;
   }
 
+  .pro-name {
+    font-size: 2rem;
+  }
+
   .app-page > div {
     height: 80%;
   }
@@ -122,14 +136,34 @@ body::-webkit-scrollbar {
   }
 }
 /**/
+@media (max-width: 1150px) {
+  .pro-name {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .pro-name {
+    font-size: 1.5em;
+  }
+}
+
 @media (max-width: 800px) {
-  .quote-frame {
+  .pro-name {
     font-size: 1.4em;
-    top: 7pt;
+  }
+}
+
+@media (max-width: 600px) {
+  .pro-name {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 500px) {
+  .pro-name {
+    font-size: 1rem;
+  }
   .quote-frame {
     font-size: 0.7em;
   }
@@ -139,6 +173,9 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 400px) {
+  .pro-name {
+    font-size: 0.8rem;
+  }
   .quote-frame {
     font-size: 0.6em;
   }

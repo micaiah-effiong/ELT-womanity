@@ -4,6 +4,7 @@ const quote = document.querySelector("#quote");
 const quotePre = document.querySelector("#quotePre");
 const usersName = document.querySelector("#visName");
 const visNamePre = document.querySelector("#visNamePre");
+const lastname = document.querySelector("#lastname");
 const downloadBtn = document.querySelector("#downloadBtn");
 const generate = document.querySelector("#generate");
 const file = document.getElementById("uploadFile");
@@ -34,9 +35,11 @@ file.onchange = async () => {
 //   quotePre.innerText = quote.value.trim();
 // };
 
-// usersName.oninput = () => {
-//   visNamePre.innerText = usersName.value.trim();
-// };
+usersName.oninput = () => {
+  const names = usersName.value.trim().split(" ");
+  lastname.textContent = names.pop();
+  visNamePre.textContent = names.join(" ");
+};
 
 downloadBtn.onclick = (e) => {
   e.preventDefault();
