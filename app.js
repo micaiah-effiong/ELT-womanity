@@ -21,19 +21,31 @@ file.onchange = async () => {
     console.log("loadend", file.files[0]);
     proPics.style.backgroundImage = `url('${reader.result}')`;
     console.log("generating image");
-    toPng(node)
-      .then(function (dataUrl) {
-        previewImg.src = dataUrl;
-      })
-      .catch(function (error) {
-        console.error("oops, something went wrong!", error);
-      });
+    generateImage();
   };
 };
 
 // quote.oninput = () => {
 //   quotePre.innerText = quote.value.trim();
 // };
+
+generate.onclick = (e) => {
+  e.preventDefault();
+  generateImage();
+};
+
+function generateImage() {
+  const gVal = generate.value;
+  generate.value = "Wait...";
+  toPng(node)
+    .then(function (dataUrl) {
+      generate.value = gVal;
+      return (previewImg.src = dataUrl);
+    })
+    .catch(function (error) {
+      return console.error("oops, something went wrong!", error);
+    });
+}
 
 usersName.oninput = () => {
   const names = usersName.value.trim().split(" ");
