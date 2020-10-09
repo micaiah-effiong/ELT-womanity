@@ -19,10 +19,7 @@ file.onchange = async () => {
   reader.onloadend = () => {
     console.log("loadend", file.files[0]);
     proPics.style.backgroundImage = `url('${reader.result}')`;
-  };
-
-  generate.onclick = (e) => {
-    e.preventDefault();
+    console.log("generating image");
     toPng(node)
       .then(function (dataUrl) {
         previewImg.src = dataUrl;
@@ -33,13 +30,13 @@ file.onchange = async () => {
   };
 };
 
-quote.oninput = () => {
-  quotePre.innerText = quote.value.trim();
-};
+// quote.oninput = () => {
+//   quotePre.innerText = quote.value.trim();
+// };
 
-usersName.oninput = () => {
-  visNamePre.innerText = usersName.value.trim();
-};
+// usersName.oninput = () => {
+//   visNamePre.innerText = usersName.value.trim();
+// };
 
 downloadBtn.onclick = (e) => {
   e.preventDefault();
@@ -47,7 +44,7 @@ downloadBtn.onclick = (e) => {
     .then(function (dataUrl) {
       let a = document.createElement("a");
       a.href = dataUrl;
-      a.download = `${usersName.value}-womanism-${Date.now()}.png`;
+      a.download = `${usersName.value}-womanity-${Date.now()}.png`;
       document.body.appendChild(a);
       a.click();
       a.remove();
